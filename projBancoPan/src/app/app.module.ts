@@ -9,6 +9,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CreateAccountComponent } from './pages/create-account/create-account.component';
 import { ClientAreaComponent } from './pages/client-area/client-area.component';
+import { InputMaskModule } from 'primeng/inputmask'
+import { StyleClassModule } from 'primeng/styleclass';
+import { InputTextModule } from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,14 @@ import { ClientAreaComponent } from './pages/client-area/client-area.component';
     HeaderComponent,
     CreateAccountComponent,
     ClientAreaComponent,
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    InputMaskModule,
+    StyleClassModule,
+    InputTextModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
