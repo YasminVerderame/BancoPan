@@ -78,7 +78,7 @@
         transform: scaleX(1);
       }
 
-      input[type="button"] {
+      input[type="submit"] {
         background: #00C5FF;
         color: #fff;
         border: 0px;
@@ -163,6 +163,10 @@
         height: 0px !important;
         margin-left: 0px !important;
       }
+    }
+
+    .border-bottom {
+      width: 100%!important;
     }
 
     form {

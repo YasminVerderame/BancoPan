@@ -5,6 +5,7 @@
 }
 
 .main {
+  margin-top: 6rem;
 
   .form-login {
     width: 100%;
@@ -39,6 +40,21 @@
 
       .input-group {
         position: relative;
+      }
+      
+      input[type='file'] {
+        display: none;
+      }
+      
+      /* Aparência que terá o seletor de arquivo */
+      label {
+        background-color: #3498db;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        padding: 6px 20px;
+        margin: 0 auto;
+        margin-top: 1.2rem;
       }
 
       .input {
