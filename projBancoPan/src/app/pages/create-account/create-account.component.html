@@ -11,12 +11,12 @@
 
     <form action="">
       <h1>Abra sua conta no Banco PAN</h1>
-       
-          <!-- <p-inputMask type="text" pInputText  mask="999.999.999-99"  name="cpf" placeholder="Digite o CPF" >
+
+      <!-- <p-inputMask type="text" pInputText  mask="999.999.999-99"  name="cpf" placeholder="Digite o CPF" >
           </p-inputMask> -->
 
       <div class="input-group">
-        <input type="text" placeholder="Nome completo" class="input" required>
+        <input type="text" placeholder="Nome completo" class="input" required maxlength="50">
         <span class="border-bottom"></span>
       </div>
       <div class="input-group">
@@ -24,20 +24,23 @@
         <span class="border-bottom"></span>
       </div>
       <div class="input-group">
-        <input type="text" placeholder="E-mail" class="input" required>
+        <input type="text" placeholder="E-mail" class="input" required maxlength="50">
         <span class="border-bottom"></span>
       </div>
       <div class="input-group">
-        <input type="text" placeholder="Telefone" class="input" required>
+        <input type="text" placeholder="Telefone" class="input" required maxlength="15" mask="(00) 00000-0000">
         <span class="border-bottom"></span>
       </div>
       <div class="input-group">
-        <input type="text" placeholder="CPF" class="input" required>
+        <input type="text" placeholder="CPF" class="input" required id="cpf" maxlength="14" mask="000.000.000-00">
+        <span class="border-bottom"></span>
+      </div>
+      <div class="input-group">
+        <input type="file" accept="image/*" class="input"/>
         <span class="border-bottom"></span>
       </div>
 
-      <input type="submit" value="Enviar" class="input-submit ">
-
+      <input type="submit" value="Enviar" class="input-submit">
     </form>
   </div>
 

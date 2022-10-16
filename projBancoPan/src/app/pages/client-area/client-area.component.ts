@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-client-area',
@@ -8,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class ClientAreaComponent implements OnInit {
   public step: number = 1;
 
-  constructor() { }
+  constructor() {
+    
+  }
 
   ngOnInit(): void {
   }
