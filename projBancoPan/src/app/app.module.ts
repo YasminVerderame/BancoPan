@@ -10,7 +10,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { CreateAccountComponent } from './pages/create-account/create-account.component';
 import { ClientAreaComponent } from './pages/client-area/client-area.component';
 import { NgxMaskModule } from "ngx-mask";
-import { ReactiveFormsModule } from '@angular/forms';
+import { NgxViacepModule } from "@brunoc/ngx-viacep";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,6 +28,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FontAwesomeModule,
     NgxMaskModule.forRoot(),
     ReactiveFormsModule,
+    NgxViacepModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
