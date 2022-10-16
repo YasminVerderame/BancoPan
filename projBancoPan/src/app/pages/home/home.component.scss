@@ -59,6 +59,23 @@
 }
 
 
+#link-topo {
+  text-decoration: none;
+  color: white;
+  background-color: #00C5FF;
+  padding: 0.625rem 0.780rem;
+  position: fixed;
+  right: 0.725rem;
+  bottom: 0.625rem;
+  box-shadow: 0.188rem 0.188rem 0.625rem #333;
+  scroll-behavior: smooth;
+  border-radius: 6px;
+}
+
+#link-topo:hover {
+  background-color:#00C5FF;
+}
+
 .banco-dados {
   font-family: 'Poppins', sans-serif;
   background-size: 1500px;
