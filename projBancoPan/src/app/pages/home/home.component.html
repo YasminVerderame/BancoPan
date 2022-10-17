@@ -22,7 +22,7 @@
         <div class="col imagem-mobile">
           <img class="img-group" src="../../../assets/images/undraw_team_collaboration_re_ow29.svg" alt="">
         </div>
-        <img class ="img-mobile-group" src="../../../assets/images/undraw_team_collaboration_re_ow29.svg" alt="">
+        <img class="img-mobile-group" src="../../../assets/images/undraw_team_collaboration_re_ow29.svg" alt="">
 
       </div>
     </div>
@@ -60,7 +60,7 @@
         </div>
         <div class="col-md-3">
           <div class="card">
-            <h2><a href="">ETL</a></h2>
+            <h2><a href="#etl">ETL</a></h2>
           </div>
         </div>
       </div>
@@ -72,11 +72,13 @@
     <div class="container">
       <div class="introduction">
         <h2>Banco de Dados</h2>
-        <p style="margin-top: 25px;">A primeira etapa de nossa proposta será criar uma <span>nova base de dados SQL Server na nuvem</span>.
-        Modelamos sua estrutura tornando-a totalmente normalizada, evitando assim redundâncias, inconsistências e possibilitando futuros crescimentos.</p>    
-        <h4>Mas qual iremos escolher?</h4>  
+        <p style="margin-top: 25px;">A primeira etapa de nossa proposta será criar uma <span>nova base de dados SQL
+            Server na nuvem</span>.
+          Modelamos sua estrutura tornando-a totalmente normalizada, evitando assim redundâncias, inconsistências e
+          possibilitando futuros crescimentos.</p>
+        <h4>Mas qual iremos escolher?</h4>
       </div>
-  
+
       <div class="items">
         <div class="row">
           <div class="col-md-6">
@@ -113,7 +115,6 @@
       </div>
     </div>
   </div>
-
 
   <a href="#" id="link-topo" title="Clique para voltar ao topo">&#9650;</a>
 
@@ -219,7 +220,7 @@
           </div>
 
           <h3 class="pages-title">Transação de dados para o Banco de Dados</h3>
-          <span class="detail"></span>  
+          <span class="detail"></span>
           <p class="pages-p">Para enviar esses dados para o banco de dados, usaremos REST APIs, que são requisições que
             permitem a comunicação de dados entre aplicações.
           </p>
@@ -228,31 +229,67 @@
       </div>
     </div>
   </div>
+
+  <div class="background">
+    <div class="pages" id="etl">
+      <div class="container">
+        <div class="row" style="margin-bottom: 70px;">
+          <h2 class="pages-title">ETL</h2>
+          <p class="pages-p">Processo de ETL para que o PAN não perca dados de seus clientes cadastrados na Cli360.
+            Formulário de confirmação de dados e o enviaremos para todos clientes da base antiga via push.</p>
+          <div class="col-md-6">
+            <img style="margin-top: 32px" src="../../../assets/images/etl_bp.svg" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-6 item-etl">
+            <p> <span>Padronização dos Documentos</span><br><br>
+              Clientes que responderem terão seus dados cadastrados na nova base e, além disso, esses serão enviados
+              para a AWS Glue como parâmetro de ETL, visando a recuperação de registros de contratações. Esses
+              registros, caso encontrados, serão extraídos, transformados (para se adequarem às novas regras de
+              negócio), e carregados para a nova base, sendo excluídos da Cli360 ao final do processo.
+            </p>
+          </div>
+        </div>
+        <div class="row row-column-reverse-mobile" style="margin-bottom: 70px;">
+          <div class="col-md-6 item-etl">
+            <p> <span>Inteligência Artificial</span><br><br>
+              Em relação aos clientes que não responderem o formulário após um grande período de tempo, utilizaremos
+              seus dados como parâmetro de consultas na ‘SERPRO’, uma API que acessa e retorna dados de pessoas
+              registrados na base da receita federal por uma determinada quantia.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="../../../assets/images/ia-etl.svg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <div class="plans" id="planos">
     <div class="container">
       <div class="row">
         <div class="col center">
           <h2><span>Quer</span> conhecer <br> <span>mais </span>sobre a nossa <span>proposta?!</span></h2>
-          <p>Faça o <span>download</span> dos documentos <span>completos</span> com a nossa prosta <span>mais detalhada!</span></p>
+          <p>Faça o <span>download</span> dos documentos <span>completos</span> com a nossa prosta <span>mais
+              detalhada!</span></p>
           <div class="buttons-download">
             <a href="../../../assets/files/Documentacao.pdf"><button>Download Documentação</button></a>
             <a href="../../../assets/files/script-ddl.txt"><button>Download do DDL</button></a>
             <a href="../../../assets/files/diagrama.pdf"><button>Download do Diagrama</button></a>
-          </div>  
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="video">
-    <h2 class="video-title">Assista nosso Pitch!</h2>
-    <iframe width="100%" height="515" src="https://www.youtube.com/embed/UUx04SMIB94" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-
-
-  <footer>
-    <h2 class="footer-content">Copyright &#174; 2022 All rights reserved </h2>
-    <h2 class="footer-content">The Interns</h2>
-  </footer>
+<div class="video">
+  <h2 class="video-title">Assista nosso Pitch!</h2>
+  <iframe width="100%" height="515" src="https://www.youtube.com/embed/UUx04SMIB94" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+
+<footer>
+  <h2 class="footer-content">Copyright &#174; 2022 All rights reserved </h2>
+  <h2 class="footer-content">The Interns</h2>
+</footer>

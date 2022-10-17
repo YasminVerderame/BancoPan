@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
   overflow: hidden;
 }
@@ -22,10 +23,10 @@ html, body {
     margin-top: 2rem;
   }
 
-  .nomes{
-    ul{
-      li{ 
-        span{
+  .nomes {
+    ul {
+      li {
+        span {
           color: #00C5FF;
           font-weight: 600;
         }
@@ -33,11 +34,11 @@ html, body {
     }
   }
 
-  .img-group{
+  .img-group {
     margin-top: 5rem;
   }
 
-  .img-mobile-group{
+  .img-mobile-group {
     display: none;
   }
 
@@ -80,7 +81,7 @@ html, body {
 }
 
 #link-topo:hover {
-  background-color:#29B6F6;
+  background-color: #29B6F6;
 }
 
 .banco-dados {
@@ -92,13 +93,15 @@ html, body {
   background-position-y: 200px;
   background-position-x: center;
 
-  .introduction{
+  .introduction {
     h2 {
       color: #333333;
       text-align: center;
       font-size: 32px;
-      font-weight: 700; 
+      font-weight: 700;
+      margin-top: 2rem;
     }
+
     p {
       font-size: 16px;
       color: #666666;
@@ -108,12 +111,13 @@ html, body {
       margin-left: auto;
       margin-right: auto;
       margin-top: 25px;
-      span{
+
+      span {
         color: #00C5FF;
       }
     }
 
-    h4{
+    h4 {
       text-align: center;
       margin-bottom: 25px
     }
@@ -203,33 +207,6 @@ html, body {
     left: 30%;
     vertical-align: middle;
     height: 100%;
-  }
-
-  .table thead th {
-    border-top: 0;
-    color: #333;
-    border-bottom: 0px;
-  }
-
-  .table td,
-  .table th {
-    border-top: 0;
-    font-size: 15px;
-    position: relative;
-  }
-
-  .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #F3F8FA;
-  }
-
-  td:first-child,
-  th:first-child {
-    border-radius: 17px 0 0 17px;
-  }
-
-  td:last-child,
-  th:last-child {
-    border-radius: 0 17px 17px 0;
   }
 
   a {
@@ -508,6 +485,29 @@ html, body {
   }
 }
 
+.pages-title {
+  color: #000;
+  text-align: center;
+  font-size: 3rem;
+  margin: 2.2rem auto;
+  margin-bottom: 0rem;
+}
+
+.pages-p {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.item-etl {
+  margin-top: 4rem;
+  span {
+    font-size: 2rem;
+    color: #03A9F4;
+  }
+}
+
+
 .about-bot-builder .background::before {
   content: "";
 
@@ -542,7 +542,7 @@ html, body {
 .video-title {
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  margin: 1rem 0  ;
+  margin: 1rem 0;
 }
 
 .plans {
@@ -560,7 +560,8 @@ html, body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    .buttons-download{
+
+    .buttons-download {
       display: flex;
     }
   }
@@ -870,16 +871,16 @@ footer {
     margin-top: -160px;
   }
 
-  .img-group{
+  .img-group {
     display: none !important;
   }
 
 
-  .imagem-mobile{
+  .imagem-mobile {
     display: none;
   }
 
-  .img-mobile-group{
+  .img-mobile-group {
     display: block;
   }
 
@@ -896,6 +897,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
   .banner {
     height: 365px;
     margin-top: 90px;
@@ -965,7 +967,7 @@ footer {
 
     img {
       margin-right: 0;
-      margin-bottom: 2rem !important; 
+      margin-bottom: 2rem !important;
       width: 95% !important;
     }
 
@@ -976,6 +978,7 @@ footer {
 
     .items {
       height: 500px;
+
       .item {
         margin-top: 20px;
         height: auto;
@@ -1036,7 +1039,7 @@ footer {
 
   .plans {
 
-   
+
     .buttons-download {
       display: flex;
       flex-direction: column;

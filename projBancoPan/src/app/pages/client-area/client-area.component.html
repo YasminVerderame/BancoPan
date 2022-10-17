@@ -1,195 +1,105 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="main">
+  <app-header></app-header>
+  <div class="form-login" *ngIf="step === 1">
+    <img src="../../../assets/images/undraw_secure_login_pdn4.svg" alt="">
+    <div class="linha-vertical"></div>
 
-  <script type="text/javascript">
-    
-    function limpa_formulário_cep() {
-            //Limpa valores do formulário de cep.
-            document.getElementById('rua').value=("");
-            document.getElementById('bairro').value=("");
-            document.getElementById('cidade').value=("");
-            document.getElementById('uf').value=("");
-            document.getElementById('ibge').value=("");
-    }
-
-    function meu_callback(conteudo) {
-        if (!("erro" in conteudo)) {
-            //Atualiza os campos com os valores.
-            document.getElementById('rua').value=(conteudo.logradouro);
-            document.getElementById('bairro').value=(conteudo.bairro);
-            document.getElementById('cidade').value=(conteudo.localidade);
-            document.getElementById('uf').value=(conteudo.uf);
-            document.getElementById('ibge').value=(conteudo.ibge);
-        } //end if.
-        else {
-            //CEP não Encontrado.
-            limpa_formulário_cep();
-            alert("CEP não encontrado.");
-        }
-    }
-        
-    function pesquisacep(valor) {
-
-        //Nova variável "cep" somente com dígitos.
-        var cep = valor.replace(/\D/g, '');
-
-        //Verifica se campo cep possui valor informado.
-        if (cep != "") {
-
-            //Expressão regular para validar o CEP.
-            var validacep = /^[0-9]{8}$/;
-
-            //Valida o formato do CEP.
-            if(validacep.test(cep)) {
-
-                //Preenche os campos com "..." enquanto consulta webservice.
-                document.getElementById('rua').value="...";
-                document.getElementById('bairro').value="...";
-                document.getElementById('cidade').value="...";
-                document.getElementById('uf').value="...";
-                document.getElementById('ibge').value="...";
-
-                //Cria um elemento javascript.
-                var script = document.createElement('script');
-
-                //Sincroniza com o callback.
-                script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
-
-                //Insere script no documento e carrega o conteúdo.
-                document.body.appendChild(script);
-
-            } //end if.
-            else {
-                //cep é inválido.
-                limpa_formulário_cep();
-                alert("Formato de CEP inválido.");
-            }
-        } //end if.
-        else {
-            //cep sem valor, limpa formulário.
-            limpa_formulário_cep();
-        }
-    };
-
-    </script>
-
-</head>
-<body>
-
-  <div class="main">
-    <app-header></app-header>
-    <div class="form-login" *ngIf="step === 1">
-      <img src="../../../assets/images/undraw_secure_login_pdn4.svg" alt="">
-      <div class="linha-vertical"></div>
-  
-      <form action="">
-        <h1>Entre na sua conta e PAN</h1>
-        <div class="input-group">
-          <input type="text" placeholder="CPF" class="input" maxlength="14" required mask="000.000.000-00">
-          <span class="border-bottom"></span>
-        </div>
-        <div class="input-group">
-          <input type="password" placeholder="Senha" class="input" required>
-          <span class="border-bottom"></span>
-        </div>
-  
-        <input type="submit" (click)="step = 2" value="Entrar">
-  
-      </form>
-  
-    </div>
-  
-    <div class="form-login" *ngIf="step===2">
-      <img style="margin-left: 70px; margin-bottom: 64px;" src="../../../assets/images/undraw_fill_form_re_cwyf.svg"
-        alt="">
-      <div class="linha-vertical"></div>
-  
-      <form action="">
-        <h1>Atualize seus dados!</h1>
-        <div class="input-group">
-          <input type="text" placeholder="CPF" class="input" required mask="000.000.000-00">
-          <span class="border-bottom"></span>
-        </div>
-        <div class="input-group">
-          <input type="text" placeholder="Nome completo" class="input" required>
-          <span class="border-bottom"></span>
-        </div>
-        <div class="input-group">
-          <input type="text" placeholder="Telefone" class="input" required maxlength="15" mask="(00) 00000-0000">
-          <span class="border-bottom"></span>
-        </div>
-        <div class="input-group">
-          <input type="text" placeholder="E-mail" class="input" required>
-          <span class="border-bottom"></span>
-        </div>
-  
-        <input type="submit" (click)="step = 3" value="Próximo">
-      </form>
-  
-    </div>
-  
-    <div class="form-login" *ngIf="step === 3">
-      <img style="margin-bottom: 11rem; margin-left: 6rem;" src="../../../assets/images/undraw_resume_re_hkth.svg" alt="">
-      <div class="linha-vertical"></div>
-  
-      <form action="">
-  
-        <h1>Atualize seus dados!</h1>
-        <div class="input-group">
-          <input type="text" placeholder="Data de nascimento" class="input" required mask="00/00/0000">
-          <span class="border-bottom"></span>
-        </div>
-        <div class="input-group">
-          <input name="cep" class="input" placeholder="CEP" type="text" id="cep" value="" size="10" required mask="00000-000" maxlength="9"
-          onblur="pesquisacep(this.value);" />
-          <span class="border-bottom"></span>
-        </div>
-        <div class="input-group">
-          <input type="text" placeholder="Rua" class="input" id="rua" required>
-          <span class="border-bottom"></span>
-        </div>
-        <div class="input-group">
-          <input type="text" placeholder="Bairro" class="input" id="bairro" required>
-          <span class="border-bottom"></span>
-        </div>
-        <div class="input-group">
-          <input type="text" placeholder="Cidade" class="input" id="cidade" required>
-          <span class="border-bottom"></span>
-        </div>
-        <div class="input-group">
-          <input type="text" placeholder="UF" class="input" id="uf" required maxlength="2">
-          <span class="border-bottom"></span>
-        </div>
-        <div class="input-group">
-          <input type="text" placeholder="Número" class="input" required maxlength="5">
-          <span class="border-bottom"></span>
-        </div>
-  
-        <input type="submit" (click)="step = 4" value="Concluir" onclick="teste();">
-      </form>
-    </div>
-  
-    <div class="form-login" *ngIf="step === 4">
-      <img style="margin-bottom: 11rem; margin-left: 6rem;"
-        src="../../../assets/images/undraw_order_confirmed_re_g0if (1).svg" alt="">
-      <div class="linha-vertical"></div>
-  
-      <div class="success-update">
-        <h1>Dados atualizados com sucesso!</h1>
-        <button>Ir para Área do Cliente</button>
+    <form action="">
+      <h1>Entre na sua conta e PAN</h1>
+      <div class="input-group">
+        <input type="text" placeholder="CPF" class="input" maxlength="14" required mask="000.000.000-00">
+        <span class="border-bottom"></span>
       </div>
-    </div>
-  
-    <footer>
-      <h2 class="footer-content">Copyright &#174; 2022 All rights reserved </h2>
-      <h2 class="footer-content">The Interns</h2>
-    </footer>
+      <div class="input-group">
+        <input type="password" placeholder="Senha" class="input" required>
+        <span class="border-bottom"></span>
+      </div>
+
+      <input type="submit" (click)="step = 2" value="Entrar">
+
+    </form>
+
   </div>
-  
-  
-</body>
-</html>
+
+  <div class="form-login" *ngIf="step===2">
+    <img style="margin-left: 70px; margin-bottom: 64px;" src="../../../assets/images/undraw_fill_form_re_cwyf.svg"
+      alt="">
+    <div class="linha-vertical"></div>
+
+    <form action="">
+      <h1>Atualize seus dados!</h1>
+      <div class="input-group">
+        <input type="text" placeholder="Nome completo" class="input" required>
+        <span class="border-bottom"></span>
+      </div>
+      <div class="input-group">
+        <input type="text" placeholder="Telefone" class="input" required maxlength="15" mask="(00) 00000-0000">
+        <span class="border-bottom"></span>
+      </div>
+      <div class="input-group">
+        <input type="text" placeholder="E-mail" class="input" required>
+        <span class="border-bottom"></span>
+      </div>
+
+      <input type="submit" (click)="step = 3" value="Próximo">
+    </form>
+
+  </div>
+
+  <div class="form-login" *ngIf="step === 3">
+    <img style="margin-bottom: 11rem; margin-left: 6rem;" src="../../../assets/images/undraw_resume_re_hkth.svg" alt="">
+    <div class="linha-vertical"></div>
+
+    <form action="">
+
+      <h1>Atualize seus dados!</h1>
+      <div class="input-group">
+        <input type="text" placeholder="Data de nascimento" class="input" required mask="00/00/0000">
+        <span class="border-bottom"></span>
+      </div>
+      <div class="input-group">
+        <input name="cep" class="input" placeholder="CEP" type="text" id="cep" value="" size="10" required
+          mask="00000-000" maxlength="9"  />
+        <span class="border-bottom"></span>
+      </div>
+      <div class="input-group">
+        <input type="text" placeholder="Rua" class="input" id="rua" required>
+        <span class="border-bottom"></span>
+      </div>
+      <div class="input-group">
+        <input type="text" placeholder="Bairro" class="input" id="bairro" required>
+        <span class="border-bottom"></span>
+      </div>
+      <div class="input-group">
+        <input type="text" placeholder="Cidade" class="input" id="cidade" required>
+        <span class="border-bottom"></span>
+      </div>
+      <div class="input-group">
+        <input type="text" placeholder="UF" class="input" id="uf" required maxlength="2">
+        <span class="border-bottom"></span>
+      </div>
+      <div class="input-group">
+        <input type="text" placeholder="Número" class="input" required maxlength="5">
+        <span class="border-bottom"></span>
+      </div>
+
+      <input type="submit" (click)="step = 4" value="Concluir" (onclick)="onBlur()">
+    </form>
+  </div>
+
+  <div class="form-login" *ngIf="step === 4">
+    <img style="margin-bottom: 11rem; margin-left: 6rem;"
+      src="../../../assets/images/undraw_order_confirmed_re_g0if (1).svg" alt="">
+    <div class="linha-vertical"></div>
+
+    <div class="success-update">
+      <h1>Dados atualizados com sucesso!</h1>
+      <button>Ir para Área do Cliente</button>
+    </div>
+  </div>
+
+  <footer>
+    <h2 class="footer-content">Copyright &#174; 2022 All rights reserved </h2>
+    <h2 class="footer-content">The Interns</h2>
+  </footer>
+</div>
