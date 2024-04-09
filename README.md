@@ -1,14 +1,6 @@
 # BancoPan
-O Banco PAN traz o desafio da sua área de CRM (Customer Relationship Management) quanto a qualificação de dados cadastrais dos seus clientes.
-Hoje existem problemas de sincronização de dados de sistemas diversos que contém informações cadastrais dos clientes e produtos que operam.
-O Banco PAN deseja o desenvolvimento de uma solução que possibilite padronizar a captura de dados, complementação, padronização e qualificação dos dados para que o cadastro seja feito de forma correta e completa, criando harmonização de dados
+O Banco PAN enfrenta desafios em sua área de CRM devido a problemas de sincronização entre sistemas que armazenam dados cadastrais dos clientes e produtos, buscando uma solução para padronizar e qualificar esses dados a fim de criar um cadastro completo e correto. Eles desejam uma visão centralizada e única do cliente, substituindo a abordagem orientada ao produto por uma orientada ao cliente, visando oferecer produtos e serviços personalizados. O parceiro do desafio espera uma solução que englobe o desenvolvimento de software, banco de dados e infraestrutura tecnológica, garantindo alta disponibilidade e desempenho nas transações de dados cadastrais. A limpeza e complementação dos dados comprometidos não são parte inicial do escopo do desafio.
 
-A harmonização permitirá a consulta correta da situação operacional do cliente e a oferta de produtos e serviços direcionados à necessidades desse cliente.
-É de interesse do parceiro do challenge que sua equipe de desenvolvimento de projeto trabalhe uma solução envolvendo o desenho técnico e construção do software de aplicação, banco de dados e infraestrutura tecnológica para garantir alta disponibilidade, confiabilidade, integridade e desempenho nas transações que envolvem alimentação, modificação e consumo em consultas de dados cadastrais dos clientes do Banco PAN.
-A limpeza e complementação de dados que hoje estão comprometidos em qualidade também não é alvo inicial do desafio.
-Detalhes do pedido feito pelo Banco PAN:
-“Desejamos remodelar nosso banco de dados de modo a passar a tratar o cliente de maneira única e centralizada. O nosso sistema tem como objetivo ser o repositório cadastral de clientes do Pan, centralizando a informação em um único sistema.
-Atualmente, nosso banco de dados está estruturado na visão de cliente por produto, de modo que a mesma pessoa apareça de maneira duplicada em uma visão cliente. Queremos sair de uma visão orientada ao produto, para uma visão orientada ao cliente."
 
 ## Dores do negócio:
 * Clientes segmentados por produto;
@@ -40,6 +32,9 @@ Atualmente, nosso banco de dados está estruturado na visão de cliente por prod
 ![image](https://github.com/YasminVerderame/BancoPan/assets/73840387/a6343fb3-8a0e-4d31-82d4-a586c5d6e5f0)
 
 
+## Nossa solução:
+A solução está disponível no site: 
+https://6615683e3b8562157bdfd20b--sunny-creponne-71a9d6.netlify.app/
 
 
 
