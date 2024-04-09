@@ -1,0 +1,1143 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    height: 90px;
+    padding: 0px;
+    width: 100%;
+}
+
+header nav .nav-link {
+    color: #666;
+    font-size: 17px;
+    padding: 0px 10px;
+    font-weight: 400;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+header nav .navbar-link {
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+header nav .navbar-link:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+header nav .navbar-brand {
+    padding-left: 15px;
+}
+
+header nav .active-link {
+    color: #7f35b2;
+    font-weight: 500;
+}
+
+header nav .nav-link:hover {
+    color: #000;
+}
+
+header nav .register {
+    background: #00c5ff;
+    color: #fff;
+    font-weight: 500;
+    border: 0px;
+    padding: 8px 20px;
+    font-size: 13px;
+    margin: 0 20px;
+    width: 145px;
+    height: 43px;
+    border-radius: 10px;
+}
+
+
+header nav .navbar-toggler {
+    position: absolute;
+    padding: 0;
+    margin-left: 80%;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+header nav .navbar-toggler img {
+    width: 33px;
+}
+
+header nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+header nav .navbar-nav {
+    margin-left: auto;
+}
+
+@media (max-width: 1199px) {
+    header nav .logo {
+        width: 180px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    header nav {
+        height: 60px;
+        padding: 0px 15px;
+    }
+
+    header nav .navbar-collapse {
+        background: #fff;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding-top: 120px;
+        z-index: -1;
+        width: 100%;
+        display: none;
+        box-shadow: 1px 3px 4px 2px #000 14;
+    }
+
+    header nav .navbar-collapse ul {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+
+    header nav a {
+        color: #000;
+        height: 40px;
+    }
+
+    header nav .register {
+        margin: 0 10px;
+        margin-bottom: 15px;
+    }
+
+    header nav .facebook {
+        width: 35%;
+        margin-top: 0px;
+        margin-left: 1em;
+    }
+
+    header .navbar-nav {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .navbar-nav li {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 1199px) {
+    header html {
+        overflow-x: hidden;
+    }
+
+    header .none {
+        display: none;
+    }
+}
+
+@media (max-width: 756px) {
+    header .navbar-collapse ul {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 600px) {
+    header nav .logo {
+        width: 140px;
+        margin-top: 0px;
+    }
+}
+
+header .open {
+    display: block !important;
+}
+
+.banner {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    height: 490px;
+}
+
+.banner h2 {
+    margin-top: 115px;
+    color: #333;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+
+.banner .nomes ul li span {
+    color: #00c5ff;
+    font-weight: 600;
+}
+
+.banner .img-group {
+    margin-top: 5rem;
+}
+
+.banner .img-mobile-group {
+    display: none;
+}
+
+.banner p {
+    color: #666;
+    font-size: 20px;
+}
+
+.banner p span {
+    color: #7416b4;
+    font-weight: 400;
+}
+
+.banner button {
+    width: 260px;
+    height: 62px;
+    background: #00c5ff;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 50px;
+    border: 0px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.banco-dados {
+    font-family: 'Poppins', sans-serif;
+    background-size: 1500px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position-y: 200px;
+    background-position-x: center;
+}
+
+.banco-dados .introduction h2 {
+    color: #333;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.banco-dados .introduction p {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.banco-dados .introduction p span {
+    color: #00c5ff;
+}
+
+.banco-dados .introduction h4 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.banco-dados .items {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banco-dados .items span {
+    font-weight: 600;
+    color: #29b6f6;
+}
+
+.banco-dados .items .why {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.banco-dados .items .item {
+    margin: 0 20px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0px 3px 6px #236ea1 40;
+    border: 1px solid #236ea1 38;
+    border-radius: 10px;
+    padding: 30px 9px;
+    height: 425px;
+}
+
+.banco-dados .items .item li {
+    font-size: 16px;
+    text-align: start;
+    line-height: 2;
+}
+
+.banco-dados .items .item img {
+    height: 36px;
+    margin-bottom: 20px;
+}
+
+.banco-dados .items .item h4 {
+    font-size: 21px;
+    color: #333;
+    text-align: center;
+}
+
+.banco-dados .items .item p {
+    font-size: 15px;
+}
+
+.banco-dados .items .item span.detail {
+    width: 50px;
+    height: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00c5ff;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.advantages {
+    padding: 50px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.advantages h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.advantages h5 {
+    color: #22a7c2;
+    font-size: 16px;
+}
+
+.advantages img {
+    margin: 0 auto;
+    width: 25px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.advantages .table thead th {
+    border-top: 0;
+    color: #333;
+    border-bottom: 0px;
+}
+
+.advantages .table td,
+.advantages .table th {
+    border-top: 0;
+    font-size: 15px;
+    position: relative;
+}
+
+.advantages .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f3f8fa;
+}
+
+.advantages td:first-child,
+.advantages th:first-child {
+    border-radius: 17px 0 0 17px;
+}
+
+.advantages td:last-child,
+.advantages th:last-child {
+    border-radius: 0 17px 17px 0;
+}
+
+.advantages a {
+    text-decoration: none;
+}
+
+.advantages button {
+    width: 390px;
+    height: 62px;
+    box-shadow: 0px 2px 6px #762ea8 33;
+    background: #00c5ff;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 50px;
+    border: 0px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.implementation {
+    font-family: 'Poppins', sans-serif;
+    background-color: #00c5ff;
+    color: #fff;
+}
+
+.implementation h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.info-about {
+    font-family: 'Poppins', sans-serif;
+    margin-top: -40px;
+}
+
+.info-about .card {
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    min-height: 188px;
+    box-shadow: 0px 3px 6px #000 29;
+    padding: 26px;
+    margin-bottom: 20px;
+}
+
+.info-about .card a {
+    text-decoration: none;
+    color: #039be5;
+}
+
+.info-about .card a:hover {
+    color: #03a9f4;
+}
+
+.info-about .card h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #22a7c2;
+    margin-top: 35px;
+}
+
+.video {
+    text-align: center;
+    font-family: "Montserrat";
+}
+
+.video h2 {
+    margin-top: 60px;
+    color: #333;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.video h2 span {
+    color: #00c5ff;
+}
+
+.video p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.video video {
+    max-width: 635px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.video span.detail {
+    background-color: #236ea1;
+    width: 130px;
+    height: 3px;
+    display: block;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-more {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    background-size: 1500px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+
+.info-more h2 {
+    margin-top: 20px;
+    color: #333;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.info-more h2 span {
+    color: #00c5ff;
+}
+
+.info-more .card {
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    min-height: 263px;
+    margin: 0 15px;
+}
+
+.info-more .card img {
+    width: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.info-more .card p {
+    font-size: 17px;
+    color: #666;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-bottom: -31px;
+}
+
+.info-more a {
+    text-decoration: none;
+}
+
+.info-more button {
+    width: 270px;
+    height: 62px;
+    box-shadow: 0px 2px 6px #762ea8 33;
+    background: #00c5ff;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 50px;
+    border: 0px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: -31px;
+}
+
+.about-bot-builder {
+    padding-top: 80px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.about-bot-builder span {
+    color: #00c5ff;
+    font-weight: 600;
+}
+
+.about-bot-builder .table-bds-title {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.about-bot-builder .tables-dbs {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-bot-builder .tables-dbs .tables-bds-img {
+    width: 30%;
+    margin-right: 2rem;
+}
+
+.about-bot-builder .table-cloud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-bot-builder .table-cloud h4 {
+    margin: 1.3rem 0;
+}
+
+.about-bot-builder h2 {
+    margin-top: 20px;
+    color: #333;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-bot-builder h2 span {
+    color: #00c5ff;
+}
+
+.about-bot-builder p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-bot-builder .pages {
+    background: #1c96ae;
+    width: 100%;
+    height: 144rem;
+}
+
+.about-bot-builder .pages span.detail {
+    width: 250px;
+    height: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00c5ff;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.about-bot-builder .pages .pages-title {
+    color: #fff;
+    text-align: center;
+    margin: 2.2rem auto;
+    margin-bottom: 0rem;
+}
+
+.about-bot-builder .pages p {
+    margin-top: 60px;
+    font-size: 19px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.about-bot-builder .pages p span {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.about-bot-builder .background::before {
+    content: "";
+    width: 100%;
+    display: block;
+    background-size: 1500px;
+    height: 307px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-bottom: -28px;
+    margin-top: -100px;
+}
+
+.about-bot-builder .background::after {
+    content: "";
+    width: 100%;
+    display: block;
+    background-size: 1500px;
+    height: 307px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-top: -200px;
+}
+
+.video {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.video-title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 1rem 0;
+}
+
+.plans {
+    padding-top: 0px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.plans .center {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.plans .center .buttons-download {
+    display: flex;
+}
+
+.plans button {
+    width: 260px;
+    height: 62px;
+    margin-right: 17px;
+    background: #00c5ff;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.plans h2 {
+    margin-top: 20px;
+    color: #333;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.plans h2 span {
+    color: #00c5ff;
+}
+
+.plans p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.plans p span {
+    font-weight: 600;
+}
+
+.plans img {
+    margin-top: 20px;
+}
+
+.plans .item {
+    background: transparent linear-gradient(180deg, #fff 0 0%, #808080 24 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #000 29;
+    color: #666;
+    padding: 30px;
+    margin: 0 -15px;
+    min-height: 600px;
+}
+
+.plans .item h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.plans .item h4 {
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: line-through;
+    text-align: center;
+}
+
+.plans .item h4 b {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.plans .item h3 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.plans .item h3 b {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.plans .item p {
+    text-align: left;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.plans .item ul {
+    padding: 0;
+    list-style: none;
+}
+
+.plans .item ul li {
+    display: flex;
+    font-size: 12px;
+}
+
+.plans .item ul li img {
+    max-width: 22px;
+    margin-right: 6px;
+    position: absolute;
+}
+
+.plans .item ul li span {
+    line-height: 19px;
+    margin-bottom: 5px;
+    margin-left: 28px;
+}
+
+.plans .item.center {
+    border-radius: 0px 20px 20px 0px;
+    color: #666;
+    background: transparent linear-gradient(180deg, #fff 0 0%, #808080 24 100%) 0% 0% no-repeat padding-box;
+    cursor: pointer;
+}
+
+.plans .item.center p {
+    color: #666;
+}
+
+.plans .item.center button {
+    width: 180px;
+    height: 45px;
+    color: #00c5ff;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 1px solid #00c5ff;
+    font-size: 12px;
+    margin-top: 2.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.plans .item.center .link-saiba-mais {
+    width: 100%;
+    text-align: center;
+}
+
+.plans .item.center .link-saiba-mais a {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: #00c5ff;
+    text-decoration: underline;
+}
+
+.plans .item.main {
+    color: #fff !important;
+    background-color: #00c5ff !important;
+}
+
+.plans .item.main p {
+    color: #fff !important;
+}
+
+.plans .item.main a {
+    color: #fff !important;
+}
+
+.plans .item.left {
+    border-radius: 20px 0px 0px 20px;
+    color: #666;
+    background: transparent linear-gradient(180deg, #fff 0 0%, #808080 24 100%) 0% 0% no-repeat padding-box;
+    cursor: pointer;
+}
+
+.plans .item.left p {
+    color: #666;
+}
+
+.plans .item.left button {
+    width: 180px;
+    height: 45px;
+    color: #00c5ff;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 1.2rem;
+    border: 1px solid #00c5ff;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.plans .item.left .link-saiba-mais {
+    width: 100%;
+    text-align: center;
+}
+
+.plans .item.left .link-saiba-mais a {
+    color: #00c5ff;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-decoration: underline;
+}
+
+.plans .item.right {
+    border-radius: 0px 20px 20px 0px;
+    color: #666;
+    background: transparent linear-gradient(180deg, #fff 0 0%, #808080 24 100%) 0% 0% no-repeat padding-box;
+    cursor: pointer;
+}
+
+.plans .item.right p {
+    color: #666;
+}
+
+.plans .item.right button {
+    width: 180px;
+    height: 45px;
+    color: #00c5ff;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 3.4rem;
+    border: 1px solid #00c5ff;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.plans .item.right .link-saiba-mais {
+    width: 100%;
+    text-align: center;
+}
+
+.plans .item.right .link-saiba-mais a {
+    color: #00c5ff;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-decoration: underline;
+}
+
+.plans .item.especial h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.plans .item.especial a {
+    text-align: center;
+    line-height: 2.5rem;
+    background-color: #333;
+    width: 180px;
+    height: 45px;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 3.4rem;
+    margin-bottom: 1.5rem;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+footer {
+    width: 100%;
+    height: 137px;
+    background-color: #333;
+    padding: 2rem;
+}
+
+footer .footer-content {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+}
+
+@media (max-width: 1200px) {
+    .pages {
+        height: 156rem !important;
+    }
+
+    .table-cloud img {
+        width: 364px;
+    }
+
+    .implementation {
+        margin-top: 3rem;
+    }
+
+    .channels {
+        margin-top: -160px;
+    }
+
+    .img-group {
+        display: none !important;
+    }
+
+    .imagem-mobile {
+        display: none;
+    }
+
+    .img-mobile-group {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner {
+        margin-top: 50px;
+    }
+
+    .video {
+        max-width: 635px;
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    .row-column-reverse-mobile {
+        flex-direction: column-reverse;
+    }
+
+    .button-help {
+        position: fixed;
+        right: 2%;
+        top: 75%;
+        z-index: 900;
+    }
+
+    .button-help img {
+        width: 120px;
+    }
+
+    .button-help .duda-text {
+        width: 100px;
+        position: absolute;
+        right: 8%;
+        top: 8%;
+    }
+
+    .banner h2 {
+        margin-top: 60px;
+        font-size: 33px;
+        line-height: normal;
+    }
+
+    .banner img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .banner button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .channels {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .channels .item {
+        margin-bottom: 10px;
+    }
+
+    .tables-dbs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tables-dbs img {
+        margin-right: 0;
+        margin-bottom: 2rem !important;
+        width: 95% !important;
+    }
+
+    .possibilities {
+        background-position-y: bottom;
+    }
+
+    .possibilities .items .item {
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .possibilities .items .item p {
+        margin-bottom: 20px;
+    }
+
+    .advantages button {
+        width: 100%;
+    }
+
+    .implementation h2 {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .implementation .image {
+        margin-top: 0px;
+    }
+
+    .implementation p {
+        margin-bottom: 40px;
+    }
+
+    .firt-card {
+        margin-top: 3.5rem;
+    }
+
+    .info-more .card {
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        min-height: 170px;
+    }
+
+    .about-bot-builder .pages p {
+        font-size: 18px;
+    }
+
+    span.detail {
+        display: none;
+    }
+
+    .plans .buttons-download {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plans h2 {
+        font-size: 36px;
+        margin-top: 27rem;
+    }
+
+    .plans .item {
+        margin: 15px 0px;
+    }
+
+    .plans .item.left,
+    .plans .item.right {
+        border-radius: 20px;
+    }
+}
